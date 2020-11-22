@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gladiatrix.component.css']
 })
 export class GladiatrixComponent implements OnInit {
-
-  constructor() { }
+  girlName = '';
+  allowNewGirl = false;
+  constructor() {
+    
+   }
 
   ngOnInit() {
+  }
+
+  onAddGirl(){
+    this.girlName = '';
   }
 
 }

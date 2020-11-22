@@ -6,6 +6,7 @@ import { ServerComponent} from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { DuelComponent } from './duel/duel.component';
 import { GladiatrixComponent } from './gladiatrix/gladiatrix.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GladiatrixComponent } from './gladiatrix/gladiatrix.component';
     GladiatrixComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
