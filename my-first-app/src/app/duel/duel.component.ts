@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./duel.component.css']
 })
 export class DuelComponent implements OnInit {
+  girlName = '';
+  girls = ['Tanya', 'Goldie', 'Ashley'];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onAddGirl() {
+    this.girls.push(this.girlName);
   }
 }

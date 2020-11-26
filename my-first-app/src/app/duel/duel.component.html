@@ -3,8 +3,16 @@
     <div class="col-xs-12">
       <h3>This will be the fight between</h3>
       <hr>
-      <app-gladiatrix></app-gladiatrix>
-      <app-gladiatrix></app-gladiatrix>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="girlName">
+      <hr>
+      <button
+        class="btn btn-primary"
+        [disabled]="girlName == ''"
+        (click)="onAddGirl()">Add girl</button>
+      <app-gladiatrix *ngFor="let girl of girls"></app-gladiatrix>
     </div>
   </div>
 </div>
