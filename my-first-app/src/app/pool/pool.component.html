@@ -1,0 +1,17 @@
+<div>
+<br/>
+<hr>
+<label>Girl Name</label>
+
+<input
+    type="text"
+    class="form-control"
+    [(ngModel)]="girlName">
+<button
+    class="btn btn-primary"    
+    (click)="onAddGirl()">Add girl</button>
+<app-girl *ngFor="let girls of girls"></app-girl>
+
+<br/>
+<hr>
+</div>

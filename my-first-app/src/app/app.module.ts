@@ -7,6 +7,8 @@ import { ServersComponent } from './servers/servers.component';
 import { DuelComponent } from './duel/duel.component';
 import { GladiatrixComponent } from './gladiatrix/gladiatrix.component';
 import { FormsModule } from '@angular/forms';
+import { GirlComponent } from './girl/girl.component';
+import { PoolComponent } from './pool/pool.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FormsModule } from '@angular/forms';
     ServerComponent,
     ServersComponent,
     DuelComponent,
-    GladiatrixComponent
+    GladiatrixComponent,
+    GirlComponent,
+    PoolComponent
   ],
   imports: [
     BrowserModule,
